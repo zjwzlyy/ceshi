@@ -1,29 +1,316 @@
-<html><!-- ipconfig/flushdns -->
-    <head><!-- 可添加元素标签: <title>（标题）, <style>（样式）, <meta>（元数据）, <link>（链接）, <script>（脚本）, <noscript> ，<base>（基础）<base href="" target（目标）="_blank（空白）">   -->
-         <meta charset="UTF-8"><!-- 万国码升级版 -->
-        <a https://www.cnblogs.com/ypppt/p/12922824.html</a><!-- css样式大全，完整的Css样式大全(整理) -->
-        <a https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element</a><!-- HTML 元素参考 -->
-        <a https://blog.csdn.net/u013778905/article/details/53177042</a><!-- 符号大全 -->
-        <a https://blog.csdn.net/cddcj/article/details/70739481</a><!-- 字体大全 -->
-        <a https://likexia.gitee.io/tools/colors/yansezhongwenming.html</a><!-- 颜色中英文对照表 -->
-        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.cae815ded938d6f98a33c000d8cd7a33?rik=%2fdm0pt74acwIkw&riu=http%3a%2f%2fimg.yipic.cn%2fthumb%2fbccffd66%2f3e7d4981%2f05f3e7d8%2f2ad4efc0%2fbig_bccffd663e7d498105f3e7d82ad4efc0.png%3fx-oss-process%3dimage%2fformat%2cwebp%2fsharpen%2c100&ehk=FzxVoku1nsETfdSI%2bcZyym6Db5r7irlq%2bEdqaBNQ22k%3d&risl=&pid=ImgRaw&r=0" alt="Pulpit rock" width="100%"height="100">
-        <div style="position:absolute; left:48.5%; top:1.5%"><h1>古诗</h1></div>
-        <h1></h1><h2></h2><h3></h3><h4></h4><h5></h5><h6></h6><!-- 1到6级标题 -->
-        <p style="color:rgb(223, 15, 15);font-family:FangSong;"></p><!-- color（颜色）font-family（字体） -->
-        <img src=""><!-- “”内可复制图像链接粘贴 -->
-        <em></em><!-- 强调 -->
-        <a href="跳转到指定位置（测试页）"></a>
-        <strong></strong><!-- 粗体 -->
-        <hr /><!-- 水平线 --><br><!-- 换行 -->
-        <sub> </sub><!-- 下标 --><sup> </sup><!-- 上标 -->
-        <style>#A {background-color: lightblue;color: black;padding: 0px; text-align: center;}.B {background-color: tomato;color: white;padding: 0px;}</style><!-- <style>#A｛｝</style>（设置为id“A”的元素样式）background-color（背景色）: lightblue(亮蓝)tomato(番茄红)black（黑色）white（白色）;padding=填充0px; text-align（文本对齐）: center（中心）; -->
-        <h6 id="A"></h6><!-- 拥有唯一 id 的元素 -->
-        <h6 class="B">《将进酒》唐-李白</h6><h6 class="B">《滕王阁序》唐-王勃</h6><h6 style="text-align:center;<!-- 居中对齐 -->"class="B">《陋室铭》唐-刘禹锡</h6>山不在高，有仙则名。水不在深，有龙则灵。斯是陋室，惟吾德馨。苔痕上阶绿，草色入帘青。谈笑有鸿儒，往来无白丁。可以调素琴，阅金经。无丝竹之乱耳，无案牍之劳形。南阳诸葛庐，西蜀子云亭。孔子云：何陋之有？<!-- 拥有相同类名的多个元素 -->
-        </head>
-        <body style="background-color:#f2f2f2;"><!-- 背景色 -->
-          <div style="text-align:center;background-color:#bd44ecea;"><h2 style="margin-bottom:0;">网页的主标题</h2></div>
-          <div style="background-color:#FFD700;height:100%;width:5%;float:left;"><b>菜单</b><br><br>HTML<br><br>CSS<br><br>JavaScript</div>
-          <div id="content" style="background-color:#EEEEEE;height:100%;width:95%;float:left;">内容就在这里</div>
-          <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">哈哈</div>
-          </body>
-            </html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 1px;
+            background: #e7e7e7;
+            width: 1355px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* 导航条 */
+        .topnav {
+            overflow: hidden;
+            background-color: #d50505ed;
+        }
+
+        /* 导航条链接 */
+        .topnav a {
+            margin: 0 auto;
+            width: 14.285%;
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        a.WenZiJuZhong {
+            letter-spacing: 30px;
+        }
+
+        /* 链接颜色修改 */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* 创建两列 */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* 右侧栏 */
+        .rightcolumn {
+            width: 25%;
+            background: #e7e7e7;
+            background-color: #f1f1f1;
+            padding-left: 10px;
+        }
+
+        /* 图像部分 */
+
+        .fakeimg {
+            background-color: #e7e7e7;
+            width: 100%;
+            padding: 100px;
+            opacity: 0.5;
+        }
+
+        .fakeimg2 {
+            width: 100%;
+            height: 20px;
+            padding: 95px;
+            opacity: 1;
+        }
+
+        /* 文章卡片效果 */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        .card1 {
+            background-color: white;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        /* 底部 */
+        .footer {
+            padding: 40px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 10px;
+        }
+
+        .TouBuTuPian {
+            background: url(https://img1.imgtp.com/2023/08/22/YCi27862.png) center;
+            background-size: 100% 100%;
+            width: 100%;
+            height: 255px;
+        }
+
+        .JuZhong {
+            text-align: center;
+        }
+
+        .BeiJingTuPian2 {
+            background: url(https://img-qn.51miz.com/preview/element/00/01/25/28/E-1252844-FEDEAD5D.jpg!/quality/90/unsharp/true/compress/true/fwfh/800x800) center;
+            background-size: 100% 100%;
+        }
+
+        .test {
+            color: #ffde71;
+        }
+
+        .ShuBanWenBenBeiJing {
+            background: url(https://img1.imgtp.com/2023/08/25/aDDuFvJ6.jpg);
+            background-size: 100% 100%;
+            width: 100%;
+            height: 1400px;
+        }
+
+        .KongGe2 {
+            text-indent: 2em;
+        }
+
+        .WenBenBianJu {
+            margin: 30px 140px 20px;
+        }
+
+        .DiBuTuPian {
+            background: url(https://img1.imgtp.com/2023/08/25/yRHUqAGu.jpg);
+            background-size: 100% 100%;
+        }
+
+        .flex {
+            display: flex;
+            background-size: 100% 100%;
+        }
+
+        .LiangBianDuiQi {
+            text-align: justify;
+        }
+
+        .YouCeBianLanBeiJing {
+            background: url(https://img1.imgtp.com/2023/08/25/Crox2jpM.png);
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .XiaoQuTuPian1 {
+            background: url(https://img1.imgtp.com/2023/08/26/hi9OLMyB.jpg);
+            background-size: 100% 100%;
+            margin-bottom: 10px;
+        }
+
+        .XiaoQuTuPian2 {
+            background: url(https://img1.imgtp.com/2023/08/26/jqDomLJF.jpg);
+            background-size: 100% 100%;
+            margin-bottom: 10px;
+        }
+
+        .XiaoQuTuPian3 {
+            background: url(https://img1.imgtp.com/2023/08/26/1TQ7ojTA.jpg);
+            background-size: 100% 100%;
+            margin-bottom: 10px;
+        }
+
+        .XiaoQuTuPian4 {
+            background: url(https://img1.imgtp.com/2023/08/26/2frhjc9e.jpg);
+            background-size: 100% 100%;
+            margin-bottom: 10px;
+        }
+
+        .XiaoQuTuPian5 {
+            background: url(https://img1.imgtp.com/2023/08/26/yIv0TDq4.jpg);
+            background-size: 100% 100%;
+            margin-bottom: 10px;
+        }
+
+        .XiaoQuTuPian6 {
+            background: url(https://img1.imgtp.com/2023/08/26/e8aAboC0.jpg);
+            background-size: 100% 100%;
+            margin-bottom: 10px;
+        }
+
+        .XiaoQuTuPian7 {
+            background: url(https://img1.imgtp.com/2023/08/26/ZVtjwPhI.jpg);
+            background-size: 100% 100%;
+            margin-bottom: 10px;
+        }
+
+        .XiaoQuTuPian8 {
+            background: url(https://img1.imgtp.com/2023/08/26/MjrqvCzt.jpg);
+            background-size: 100% 100%;
+            margin-bottom: 10px;
+        }
+
+        .parent-y {
+            flex-flow: column;
+            overflow: auto;
+            height: 899px;
+        }
+
+        .XiaBianJu {
+            margin-bottom: 10px;
+        }
+
+        .DaXiao {
+            height: 111.9px;
+        }
+        .YinYing{
+            box-shadow: rgb(0, 0, 0 / 20%) 0px 2px 1px -1px,rgb(0, 0, 0 / 14%) 0px 1px 1px 0px,rgb(0, 0, 0 / 12%) 0px 1px 3px 0px,;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="TouBuTuPian">
+        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+        <h1 class="JuZhong test ">玖珑苑党支部</h1>
+    </div>
+
+    <div class="topnav">
+        <a href="#" class="WenZiJuZhong">首页</a>
+        <a href="#" class="WenZiJuZhong">简介</a>
+        <a href="#">小区党建</a>
+        <a href="#">学习强国</a>
+        <a href="#">活动计划</a>
+        <a href="#">风采展示</a>
+        <a href="#">留言信息</a>
+    </div>
+
+    <div class="flex">
+        <div class="leftcolumn">
+            <div class="card BeiJingTuPian2">
+                <h1 class="JuZhong">学而时习之,不亦说乎<dt>
+                        用学习强国APP,学习进入常态化
+                    <dt></dt>
+                    <p></p>
+            </div>
+            <div class="card ShuBanWenBenBeiJing"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <h2 class="JuZhong">全区半年度重点人才工作推进会召开</h2>
+                <h4 class="JuZhong">来源：瓯海区委组织部</h4>
+                <h3 class="KongGe2 WenBenBianJu LiangBianDuiQi">
+                    7月5日上午,瓯海区召开2023年半年度重点人才工作推进会,会议由区委组织部副部长陈翰博主持,区委常委、组织部长范学
+                    序出席会议并作重要讲话。区有关涉才部门、各镇街、开发区和在瓯科研院所负责人参加会议。
+                </h3>
+                <br />
+                <h3 class="KongGe2 WenBenBianJu LiangBianDuiQi">
+                    会上,区委人才办通报了今年以来各项人才重点指标进展,并就2023年镇街及部门人才工作考核办法进行讲解,区重点涉才部门、各镇街(经开区)、科研院所分别汇报了2023年上半年人才工作推进情况和下步计划。
+                </h3>
+                <br />
+                <h3 class="KongGe2 WenBenBianJu LiangBianDuiQi">
+                    会议指出,要贯彻落实全市第二次重点人才工作例会暨“全员引才、全域育才、全面赶超”行动部署会精神,深刻分析省市人才工作考核规则,统一思想,调整状态,加码加速开展人才任务攻坚工作。
+                </h3>
+                <br />
+                <h3 class="KongGe2 WenBenBianJu LiangBianDuiQi">
+                    会议强调,要着力构建“全员引才”浓厚氛围。要树牢主责主业意识,把人才招引作为重中之重来抓,制定任务分解清单,明确攻坚措施,以鲜明的考核导向和责任传导机制,确保人才工作取得“全年红”、搏得“满堂彩”。要全力打造“全面赶超”生动局面。人才工作时间紧、任务重,各单位各部门要主动出击,统筹开展各项人才工作,全面推进各领域各行业人才队伍建设提质增效,力争全区人才工作迈上新台阶、实现新突破。要聚力构筑“近悦远来”的最优生态。要充分解决好“人才来了怎么留的问题”,迭代升级人才政策,持续做好活动聚才,通过开展各类人才活动助推人才认识瓯海、结缘瓯海。要持续做优暖心服务,聚焦解决人才“关键小事”,打好人才“安心瓯海”组合拳。
+                </h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="rightcolumn flex column">
+            <div class="card1 YouCeBianLanBeiJing">
+                <h3 class="JuZhong test">关于我们</h3>
+                <div class="fakeimg" style="height:100px;"></div>
+                <h4 class="KongGe2 LiangBianDuiQi">温州市瓯海区梧田街道朝霞社区玖珑苑党支部成立于2021年月日,现有在册党员7人,入党积极分子2人。</h4>
+            </div>
+            <div class="card1 YouCeBianLanBeiJing XiaBianJu">
+                <h3 class="JuZhong test">公示信息</h3>
+                <h4>
+                    <p class="KongGe2 DaXiao ">玖珑苑党支部近期暂无公示。</p>
+                </h4>
+            </div>
+            <div class="YouCeBianLanBeiJing">
+                <h3 class="JuZhong test">小区风采</h3>
+                <div class="parent-y GunDongTiao">
+                    <div class="fakeimg2 XiaoQuTuPian1">
+                    </div>
+                    <div class="fakeimg2 XiaoQuTuPian2">
+                    </div>
+                    <div class="fakeimg2 XiaoQuTuPian3">
+                    </div>
+                    <div class="fakeimg2 XiaoQuTuPian4">
+                    </div>
+                    <div class="fakeimg2 XiaoQuTuPian5">
+                    </div>
+                    <div class="fakeimg2 XiaoQuTuPian6">
+                    </div>
+                    <div class="fakeimg2 XiaoQuTuPian7">
+                    </div>
+                    <div class="fakeimg2 XiaoQuTuPian8">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer DiBuTuPian">
+        <h4>@温州·玖珑苑党支部</br>浙公网安备 33000000000000 丨 ICP备案:</h4>
+    </div>
+    <div></div>
+</body>
+
+</html>
